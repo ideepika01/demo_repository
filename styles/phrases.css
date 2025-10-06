@@ -1,0 +1,104 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 34px;
+  margin: 40px 0 20px;
+  color: #0077b6;
+}
+
+.page-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #00b4d8;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.audio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 70px;
+  padding: 0 20px;
+}
+
+.audio-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.audio-card:hover {
+  transform: translateY(-5px);
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+}
+
+.audio-card h3 {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #333;
+}
+
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
